@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 1217070504}
   - component: {fileID: 1217070507}
   - component: {fileID: 1217070508}
+  - component: {fileID: 1217070509}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -342,6 +343,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forceMagnitude: 500
+--- !u!95 &1217070509
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1217070503}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7ae8d2d1ed8f3e5409427cce075ca295, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1911976719
 GameObject:
   m_ObjectHideFlags: 0

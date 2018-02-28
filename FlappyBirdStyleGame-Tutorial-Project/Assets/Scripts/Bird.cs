@@ -8,11 +8,13 @@ public class Bird : MonoBehaviour {
 
     private bool isDead = false;
     private Rigidbody2D rb2dReference;
+    private Animator anim;
 
 	// Use this for initialization
 	void Start () {
 
         rb2dReference = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         
 	}
 	
@@ -30,6 +32,8 @@ public class Bird : MonoBehaviour {
                 rb2dReference.velocity = Vector2.zero; // Shorthand writing for new Vector2(0,0). //For replicating the same behavior each time the players exerts a force (to avoid making it additive).
                 Vector2 forceVector = new Vector2(0, 1);
                 rb2dReference.AddForce(forceVector * forceMagnitude);
+
+                anim.SetTrigger("Flap");
             }
         }
 
@@ -39,6 +43,7 @@ public class Bird : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         isDead = true;
+        anim.SetTrigger("Die");
     }
 
 
