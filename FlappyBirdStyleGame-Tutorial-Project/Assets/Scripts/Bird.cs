@@ -44,6 +44,9 @@ public class Bird : MonoBehaviour {
     {
         isDead = true;
         anim.SetTrigger("Die");
+
+        //Singleton pattern in action
+        GameControl.instance.BirdDied(); // the beauty of an static variable...
     }
 
 
