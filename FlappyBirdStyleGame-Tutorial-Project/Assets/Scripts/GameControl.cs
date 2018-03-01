@@ -10,9 +10,11 @@ public class GameControl : MonoBehaviour {
 
     public GameObject gameOverText;
     public bool gameOver = false;
+    public float scrollSpeed = -1.5f; // Not sure whether specifying -1.5f from the begginning actually works
 
-	// Use this for initialization
-	void Awake () {
+
+    // Use this for initialization
+    void Awake () {
 		
         if (instance == null)
         {
