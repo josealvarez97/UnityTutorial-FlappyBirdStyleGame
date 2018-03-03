@@ -447,6 +447,48 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &784510383
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4293640402474586, guid: e3a9361cc3d1f58439b678a447fe7cce, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293640402474586, guid: e3a9361cc3d1f58439b678a447fe7cce, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293640402474586, guid: e3a9361cc3d1f58439b678a447fe7cce, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293640402474586, guid: e3a9361cc3d1f58439b678a447fe7cce, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293640402474586, guid: e3a9361cc3d1f58439b678a447fe7cce, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293640402474586, guid: e3a9361cc3d1f58439b678a447fe7cce, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293640402474586, guid: e3a9361cc3d1f58439b678a447fe7cce, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4293640402474586, guid: e3a9361cc3d1f58439b678a447fe7cce, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e3a9361cc3d1f58439b678a447fe7cce, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &849123278
 GameObject:
   m_ObjectHideFlags: 0
@@ -1002,8 +1044,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverText: {fileID: 703313813}
+  scoreText: {fileID: 296063908}
   gameOver: 0
-  scrollSpeed: 2
+  scrollSpeed: 3
 --- !u!4 &1666311985
 Transform:
   m_ObjectHideFlags: 0
